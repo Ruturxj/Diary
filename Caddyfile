@@ -1,0 +1,6 @@
+ruturxj.duckdns.org {
+  reverse_proxy localhost:3000 {
+    flush_interval -1
+  }
+  encode zstd gzip
+}

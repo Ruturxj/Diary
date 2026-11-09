@@ -1,0 +1,16 @@
+{
+  "name": "personal-diary-online",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal Diary \u2014 Full-Stack Online Backend + Offline-Resilient Suite (Ruturxj)",
+  "main": "server.mjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "pm2": "pm2 start ecosystem.config.cjs"
+  }
+}

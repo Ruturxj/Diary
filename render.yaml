@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: personal-diary-ruturxj
+    runtime: node
+    plan: starter
+    buildCommand: echo "Zero dependencies — ready"
+    startCommand: node server.mjs
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PD_DATA_DIR
+        value: /var/data
+    disk:
+      name: pd-vault-data
+      mountPath: /var/data
+      sizeGB: 1
